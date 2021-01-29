@@ -33,7 +33,7 @@ jobs:
           path: ./release-packages
       - name: Untar code-server file
         run: |
-          cd release-packages && tar -xzf release-packages/code-server*-linux-amd64.tar.gz
+          cd release-packages && tar -xzf code-server*-linux-amd64.tar.gz
       - uses: microsoft/playwright-github-action@v1
       - name: Install dependencies and run tests
         run: |
