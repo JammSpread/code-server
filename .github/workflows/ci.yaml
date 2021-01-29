@@ -38,7 +38,7 @@ jobs:
       - name: Install dependencies and run tests
         run: |
           cd release-packages && node code-server*-linux-amd64 &
-          yarn
+          yarn --frozen-lockfile
           yarn test
           pkill node
 
