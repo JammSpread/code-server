@@ -37,7 +37,7 @@ jobs:
       - uses: microsoft/playwright-github-action@v1
       - name: Install dependencies and run tests
         run: |
-          cd release-packages && node code-server*-linux-amd64 &
+          node ./release-packages/code-server*-linux-amd64 &
           yarn --frozen-lockfile
           yarn test
           pkill node
