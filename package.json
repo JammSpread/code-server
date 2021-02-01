@@ -137,6 +137,7 @@
         "lines": 40
       }
     },
-    "testTimeout": 30000
+    "testTimeout": 30000,
+    "globalSetup": "<rootDir>/test/globalSetup.ts"
   }
 }
